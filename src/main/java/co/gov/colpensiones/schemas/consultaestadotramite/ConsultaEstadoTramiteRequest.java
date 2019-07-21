@@ -65,6 +65,14 @@ public class ConsultaEstadoTramiteRequest {
     protected String tipoDocumento;
     @XmlElement(name = "Documento", required = true)
     protected String documento;
+    
+    public static ConsultaEstadoTramiteRequest of(String document, String radicado, String tipoDocumento) {
+    	ConsultaEstadoTramiteRequest consultaEstado = new ConsultaEstadoTramiteRequest();
+    	consultaEstado.setDocumento(document);
+    	consultaEstado.setRadicado(radicado);
+    	consultaEstado.setTipoDocumento(tipoDocumento);
+    	return consultaEstado;
+    }
 
     /**
      * Obtiene el valor de la propiedad radicado.

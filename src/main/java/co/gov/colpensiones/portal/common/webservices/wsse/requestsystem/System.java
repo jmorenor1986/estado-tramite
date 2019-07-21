@@ -46,6 +46,12 @@ public class System {
     protected String transactionID;
     @XmlElement(name = "IP")
     protected String ip;
+    
+    public static System of(String transactionID) {
+    	System system = new System();
+    	system.setTransactionID(transactionID);
+    	return system;
+    }
 
     /**
      * Obtiene el valor de la propiedad inputSystem.

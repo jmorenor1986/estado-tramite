@@ -15,6 +15,14 @@ public class UsernameToken {
 	private String userName;
 	@XmlElement(name = "ns2:Password")
 	private String password;
+	
+	public static UsernameToken of(String id , String userName, String password) {
+		UsernameToken usr = new UsernameToken();
+		usr.setId(id);
+		usr.setPassword(password);
+		usr.setUserName(userName);
+		return usr;
+	}
 
 	public String getId() {
 		return id;
