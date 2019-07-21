@@ -1,0 +1,30 @@
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<System
+			xmlns:ns2="http://www.colpensiones.gov.co/portal/common/WebServices/WSSE/RequestSystem">
+			<ns2:ApplicationID></ns2:ApplicationID>
+			<ns2:TransactionID>210620191235</ns2:TransactionID>
+			<ns2:IP></ns2:IP>
+		</System>
+		<ns2:Security
+			xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+				<ns2:UsernameToken
+						id="uuid-7cee5976-0111-e9c1-e34b-af1e85fa3866">
+				<ns2:Username>apstramites</ns2:Username>
+				<ns2:Password>Acceso4068</ns2:Password>
+			</ns2:UsernameToken>
+		</ns2:Security>
+	</soap:Header>
+	<soap:Body>
+		<ConsultaEstadoTramiteRequest
+			xmlns="http://www.colpensiones.gov.co/schemas/ConsultaEstadoTramite"
+			xmlns:ns2="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+			xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+			xmlns:ns4="http://www.colpensiones.gov.co/portal/common/WebServices/WSSE/RequestSystem">
+			<Radicado>2019_486</Radicado>
+			<TipoDocumento>CC</TipoDocumento>
+			<Documento>29677700</Documento>
+		</ConsultaEstadoTramiteRequest>
+	</soap:Body>
+</soap:Envelope>
